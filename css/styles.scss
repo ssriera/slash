@@ -67,10 +67,18 @@ section.calltoaction {
   background-color: $secondary-blue;
   color: $primary-white;
 }
-
 section.calltoaction button.waves-effect {
   background-color: $primary-blue;
 }
+body.login-page {
+  background-color: $primary-blue;
+  color: $primary-white;
+}
+footer.login-page{
+  background-color: $primary-blue;
+  color: $primary-white;
+}
+
 
 
 /* Footer
@@ -115,16 +123,26 @@ nav.navbar ul > li, ul> li a {
 
 /* Images
 __________________________________________________ */
-
-#nav-logo img {
+#nav-logo img{
   max-height: 55px;
   max-width: 100%;
 }
+
+body.login-page #nav-logo img {
+  max-height: 48px;
+  max-width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  text-align: center;
+  margin: 0 auto;
+}
 /*sizing for company images*/
 footer.page-footer img {
-  width: 35%;
-  height: 35%;
+  width: 20%;
+  height: 20%;
   display: inline;
+  padding-top: 20px;
 }
 /*sizing for social media icons*/
 footer div>a>img {
@@ -153,16 +171,17 @@ footer div>a>img {
   margin-right: auto;
 }
 img.about-image {
-  min-width: 110px;
-  min-height: 110px;
+  max-height: 180px;
+  min-width: auto;
+  box-sizing: border-box;
   display: block;
   margin: 0 auto;
 }
 .image-samy {
-  border-radius: 50px 15px;
+  border-radius: 100px;
 }
 .image-erik {
-  border-radius: 50px 15px;
+  border-radius: 100px;
 }
 
 /* Lists
@@ -271,6 +290,10 @@ a:hover {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 div.signup button {
   text-transform: none;
+}
+div.login button {
+  background-color: $secondary-blue;
+  color: $primary-white;
 }
 
 /* Forms
